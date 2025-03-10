@@ -1,5 +1,6 @@
 package org.tswicolly.jogo.controllers.battle;
 
+import org.tswicolly.jogo.itens.tipos.ItemBase;
 import org.tswicolly.jogo.mobs.mobBase.MobBaseClass;
 import org.tswicolly.jogo.player.Player;
 
@@ -9,6 +10,7 @@ public class BattleController {
     Player player;
     MobBaseClass mob;
     Scanner scanner = new Scanner(System.in);
+    ItemBase drop;
 
     public BattleController(Player player, MobBaseClass mob) {
         this.player = player;
@@ -58,7 +60,8 @@ public class BattleController {
 
                     String option = scanner.next();
                     if (option.equals("y")) {
-                        player.getInventory().addItem(mob.getDrop());
+                        drop = new ItemBase(mob.getEquipedItem().getName(), mob.getEquipedItem().getWeight());
+                        player.addInventoryItem(mob.getDrop());
                     }
 
                     player.addXpMob(mob.getXp());

@@ -1,4 +1,4 @@
-package org.tswicolly.jogo.mobs.normal.goblin;
+package org.tswicolly.jogo.itens.tipos.mobs;
 
 import org.tswicolly.jogo.itens.tipos.AtackItemBase;
 

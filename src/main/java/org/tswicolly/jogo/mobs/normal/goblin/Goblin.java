@@ -1,6 +1,7 @@
 package org.tswicolly.jogo.mobs.normal.goblin;
 
 import org.tswicolly.jogo.itens.tipos.ItemBase;
+import org.tswicolly.jogo.itens.tipos.mobs.GoblinDagger;
 import org.tswicolly.jogo.mobs.mobBase.MobBaseClass;
 
 public class Goblin extends MobBaseClass {

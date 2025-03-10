@@ -12,7 +12,8 @@ public class TestAtack {
 
         AtackItemBase basicSword = new AtackItemBase("BasicSword", 1, 400);
         Player player = new Player("Wicolly");
-        player.equipItem(basicSword);
+        player.addInventoryItem(basicSword);
+        player.changeEquippedItem(basicSword);
 
         Goblin goblin = new Goblin();
 
