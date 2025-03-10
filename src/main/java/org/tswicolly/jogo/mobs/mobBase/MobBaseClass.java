@@ -2,7 +2,6 @@ package org.tswicolly.jogo.mobs.mobBase;
 
 import org.tswicolly.jogo.itens.NoWeapon;
 import org.tswicolly.jogo.itens.tipos.ItemBase;
-import org.tswicolly.jogo.mobs.normal.goblin.GoblinDagger;
 
 
 public abstract class MobBaseClass {
@@ -19,7 +18,7 @@ public abstract class MobBaseClass {
      * 3 = gold
      * 4 = platinum
      */
-    private int coinTipe;
+    private int coinType;
     private ItemBase drop;
 
 
@@ -27,7 +26,7 @@ public abstract class MobBaseClass {
     MobAtack atack = new MobAtack();
 
 
-    public MobBaseClass(String name, double life, double power, double defense, double level, int xp, int coin, int coinTipe)  {
+    public MobBaseClass(String name, double life, double power, double defense, double level, int xp, int coin, int coinType)  {
         this.name = name;
         this.life = life;
         this.power = power;
@@ -35,10 +34,10 @@ public abstract class MobBaseClass {
         this.level = level;
         this.xp = xp;
         this.coin = coin;
-        this.coinTipe = coinTipe;
+        this.coinType = coinType;
         EquipedItem = new NoWeapon();
     }
-    public MobBaseClass(String name, double life, double power, double defense, double level, int xp, int coin, int coinTipe, ItemBase EquipedItem) {
+    public MobBaseClass(String name, double life, double power, double defense, double level, int xp, int coin, int coinType, ItemBase EquipedItem) {
         this.name = name;
         this.life = life;
         this.power = power;
@@ -46,7 +45,7 @@ public abstract class MobBaseClass {
         this.level = level;
         this.xp = xp;
         this.coin = coin;
-        this.coinTipe = coinTipe;
+        this.coinType = coinType;
         this.EquipedItem = EquipedItem;
     }
 
@@ -86,8 +85,8 @@ public abstract class MobBaseClass {
     public int getCoin() {
         return coin;
     }
-    public int getCoinTipe() {
-        return coinTipe;
+    public int getCoinType() {
+        return coinType;
     }
 
     public void setLife(double life) {

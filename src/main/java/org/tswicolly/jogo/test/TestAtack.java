@@ -12,7 +12,7 @@ public class TestAtack {
 
         AtackItemBase basicSword = new AtackItemBase("BasicSword", 1, 400);
         Player player = new Player("Wicolly");
-        player.EquipItem(basicSword);
+        player.equipItem(basicSword);
 
         Goblin goblin = new Goblin();
 

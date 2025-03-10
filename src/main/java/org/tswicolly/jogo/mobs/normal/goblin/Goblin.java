@@ -11,7 +11,7 @@ public class Goblin extends MobBaseClass {
         }
     };
     public Goblin() {
-        super("Goblin", 100, 10, 5, 1, 101, 10,1, new GoblinDagger());
+        super("Goblin", 100, 10, 5, 1, 1010, 10,1, new GoblinDagger());
     }
 
 }

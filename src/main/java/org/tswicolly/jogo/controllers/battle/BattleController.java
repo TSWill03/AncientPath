@@ -38,16 +38,16 @@ public class BattleController {
                     System.out.println("Player Ganhou");
                     System.out.println("Ganhou " + mob.getXp() + " de xp");
                     System.out.print("Ganhou " + mob.getCoin() + " de ");
-                    if (mob.getCoinTipe() == 1) {
+                    if (mob.getCoinType() == 1) {
                         System.out.println("Cobre");
                     }
-                    if (mob.getCoinTipe() == 2) {
+                    if (mob.getCoinType() == 2) {
                         System.out.println("Prata");
                     }
-                    if (mob.getCoinTipe() == 3) {
+                    if (mob.getCoinType() == 3) {
                         System.out.println("Ouro");
                     }
-                    if (mob.getCoinTipe() == 4) {
+                    if (mob.getCoinType() == 4) {
                         System.out.println("Platina");
                     }
                     //Mob Drop
@@ -61,8 +61,8 @@ public class BattleController {
                         player.getInventory().addItem(mob.getDrop());
                     }
 
-                    player.addXp(mob.getXp());
-                    player.addBalance(mob.getCoin(), mob.getCoinTipe());
+                    player.addXpMob(mob.getXp());
+                    player.addBalance(mob.getCoin(), mob.getCoinType());
                     System.out.println("\nPlayer ficou com " + player.getLife() + " de vida");
                 }
             }
